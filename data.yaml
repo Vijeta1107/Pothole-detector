@@ -1,0 +1,31 @@
+# data.yaml — YOLOv8 dataset configuration
+# Member 1 owns this file.
+# Place this in the project root. Update paths if needed.
+
+# ── Paths (relative to this file or absolute) ──
+path: data/unified          # root of the dataset
+train: images/train
+val:   images/val
+test:  images/test
+
+# ── Class count ──
+nc: 4
+
+# ── Class names (MUST match config.py CLASS_NAMES order) ──
+names:
+  0: Longitudinal Crack
+  1: Transverse Crack
+  2: Alligator Crack
+  3: Pothole
+
+# ── Notes ──
+# Dataset sources:
+#   - RDD2022: https://github.com/sekilab/RoadDamageDetector
+#     Classes used: D00 → Longitudinal Crack (0)
+#                   D10 → Transverse Crack   (1)
+#                   D20 → Alligator Crack    (2)
+#                   D40 → Pothole            (3)
+#   - Pothole Dataset: https://kaggle.com/datasets/chitholian/annotated-potholes-dataset
+#     Mapped to class 3 (Pothole)
+#
+# Label format: YOLO format (class cx cy w h normalized 0-1)

@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────
+# NEVER COMMIT THESE — SENSITIVE / LARGE FILES
+# ─────────────────────────────────────────
+
+# Environment variables (API keys live here)
+.env
+.env.*
+*.env
+
+# Trained model weights (too large for GitHub, download separately)
+models/best.pt
+models/last.pt
+models/*.pt
+models/*.pth
+yolov8s.pt
+
+# ─────────────────────────────────────────
+# RUNTIME OUTPUTS (auto-generated)
+# ─────────────────────────────────────────
+outputs/
+runs/
+*.db
+
+# ─────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ─────────────────────────────────────────
+# DATA (datasets are too large)
+# ─────────────────────────────────────────
+data/raw/
+data/unified/
+*.zip
+*.tar.gz
+
+# ─────────────────────────────────────────
+# JUPYTER / COLAB
+# ─────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ─────────────────────────────────────────
+# OS FILES
+# ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────
+# IDE
+# ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─────────────────────────────────────────
+# LOGS
+# ─────────────────────────────────────────
+*.log
+logs/

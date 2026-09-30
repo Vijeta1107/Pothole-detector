@@ -116,7 +116,6 @@ Citizen uploads image + GPS coordinates
 Team-B6/
 │
 ├── app.py                  # Gradio UI (Member 4)
-├── app_streamlit.py        # Streamlit UI 
 ├── run_pipeline.py         # Master pipeline orchestrator (Member 4)
 ├── config.py               # All paths, constants, thresholds (Member 4)
 │
@@ -184,16 +183,13 @@ pip install -r requirements.txt
 ### 4. Set environment variable for Claude API
 ```bash
 # Windows (Command Prompt)
-set GEMINI_API_KEY=your_api_key_here
-set GROQ_API_KEY=your_api_key_here
+set ANTHROPIC_API_KEY=your_api_key_here
 
 # Windows (PowerShell)
-$env:GEMINI_API_KEY="your_api_key_here"
-$env:GROQ_API_KEY="your_api_key_here"
+$env:ANTHROPIC_API_KEY="your_api_key_here"
 
 # Mac/Linux
-export GEMINI_API_KEY=your_api_key_here
-export GROQ_API_KEY=your_api_key_here
+export ANTHROPIC_API_KEY=your_api_key_here
 ```
 > ⚠️ Never commit your API key. It is read from the environment variable only.
 
